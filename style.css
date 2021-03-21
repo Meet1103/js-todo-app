@@ -1,0 +1,108 @@
+* {
+	margin: 0px;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Reggae One', cursive;
+}
+
+body {
+	background-color: #f5efff;
+	min-height: 100vh;
+}
+
+.heading {
+	font-size: 2rem;
+}
+
+.heading,
+.todo-form {
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-todo,
+.create-todo,
+.save-todo {
+	padding: 1rem;
+	font-size: 2rem;
+	outline: none;
+	border: none;
+}
+
+.create-todo,
+.save-todo {
+	background: rgb(50, 50, 125, 0.5);
+	color: #fff;
+}
+
+.save-todo {
+	display: none;
+}
+
+.todo-container {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.todo-list {
+	min-width: 40%;
+	list-style: none;
+}
+
+.todo {
+	margin: 0.5rem;
+	background: #fff;
+	color: black;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.check-todo,
+.update-todo,
+.delete-todo {
+	background: none;
+	color: #fff;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1.4rem;
+	outline: none;
+	border-right: 1px solid #000;
+}
+
+.delete-todo {
+	color: red;
+}
+
+.check-todo {
+	color: lightblue;
+	text-decoration: line-through;
+}
+
+.update-todo {
+	color: orange;
+}
+
+.todo-item {
+	outline: none;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.fa-trash,
+.fa-edit,
+.fa-check-square {
+	pointer-events: none;
+}
+
+.completed {
+	background-color: rgba(50, 50, 50, 0.3);
+	color: green;
+	text-decoration: line-through;
+	transition: 0.2s;
+}
